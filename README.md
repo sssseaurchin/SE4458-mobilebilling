@@ -83,12 +83,13 @@ mobilebilling/
 
 ## Data Model (ER Diagram)
 
-*(Insert/export from dbdiagram.io or similar if needed)*  
+![ER Diagram](./docs/er_diagram.png)
+
 Key entities:
 
 - `Subscriber`: id, name, phone number, active
 - `UsageLog`: id, subscriber, type (`call`/`internet`), timestamp, amount, billed
-- `Bill`: id, subscriber, month, year, amount, paid amount, isPaid
+- `Bill`: id, subscriber, month, year, totalCallMinutes, totalInternetMB, amount, paidAmount, paid
 
 ---
 
